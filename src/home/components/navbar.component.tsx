@@ -1,8 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import { DumbbellIcon, HamburgerMenuIcon } from "@/app/components/icons";
 import { sairaCondensed } from "@/app/fonts";
 import Image from "next/image";
+import { MobileNavMenu } from "./mobile-nav-menu.component";
 
 export const Navbar = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
   return (
     <header className="bg-black pt-5 h-[400px] md:h-[500px] lg:h-[600px] relative box-border px-[20px] lg:px-0">
       <Image
@@ -26,14 +32,18 @@ export const Navbar = () => {
             WorldFitness
           </span>
         </section>
-        <nav className={`${sairaCondensed.className} hidden md:flex items-center gap-x-2 uppercase font-bold text-white md:text-xl lg:text-2xl`}>
+        <nav className={`${sairaCondensed.className} hidden md:flex items-center gap-x-4 uppercase font-bold text-white md:text-xl lg:text-2xl`}>
           <a className="hover:text-primary-light transition-colors" href="#">Home</a>
           <a className="hover:text-primary-light transition-colors" href="#">About</a>
           <a className="hover:text-primary-light transition-colors" href="#">Locations</a>
           <a className="hover:text-primary-light transition-colors" href="#">Contact</a>
           <a className="bg-primary hover:bg-primary-dark hover:text-gray-200 transition-colors px-5 py-2 rounded-xl ml-2" href="#">Sign Up</a>
         </nav>
-        <button className="block md:hidden">
+        <button
+          type="button"
+          className="block md:hidden"
+          onClick={() => setMenuActive(true)}
+        >
           <HamburgerMenuIcon
             className="text-white active:text-primary"
             width={35}
@@ -52,6 +62,11 @@ export const Navbar = () => {
       <div className="absolute z-[100] bottom-0 left-0 hidden md:block w-full md:h-[40px] lg:h-[80px] overflow-hidden">
         <div className="w-full h-full bg-light [clip-path:polygon(100%_0,_100%_100%,_0_100%)]"></div>
       </div>
+
+      <MobileNavMenu
+        isMenuActive={menuActive}
+        setMenuActive={setMenuActive}
+      />
 
     </header>
   );

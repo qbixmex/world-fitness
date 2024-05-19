@@ -7,5 +7,5 @@ export const montserrat = Montserrat({
  
 export const sairaCondensed = Saira_Condensed({
   subsets: ['latin'],
-  weight: ['700', '800', '900'],
+  weight: ['600', '700', '800', '900'],
 });
