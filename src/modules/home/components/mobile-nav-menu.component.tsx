@@ -44,7 +44,7 @@ export const MobileNavMenu: FC<Props> = ({ isMenuActive, links, setMenuActive })
           }
           return (
             <Link
-              key={link.url}
+              key={link.label}
               className={styles}
               href={link.url}
             >{link.label}</Link>
