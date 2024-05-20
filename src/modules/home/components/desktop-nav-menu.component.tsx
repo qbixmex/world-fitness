@@ -29,7 +29,7 @@ export const DesktopNavMenu: FC<Props> = (props) => {
         }
         return (
           <Link
-            key={link.url}
+            key={link.label}
             className={styles}
             href={link.url}
           >{link.label}</Link>
