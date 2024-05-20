@@ -37,7 +37,7 @@ export const Header = () => {
 
       <section className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto relative z-[20] pt-5 flex justify-between items-center">
         <section className="flex justify-start items-center gap-x-2">
-          <DumbbellIcon className="text-primary" />
+          <DumbbellIcon className="text-primary" size={50} />
           <span className={`${sairaCondensed.className} uppercase font-black text-3xl text-white`}>
             WorldFitness
           </span>
