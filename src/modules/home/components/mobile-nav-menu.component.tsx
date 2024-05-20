@@ -20,7 +20,7 @@ export const MobileNavMenu: FC<Props> = ({ isMenuActive, links, setMenuActive })
   if (!isMenuActive) return null;
 
   return (
-    <section className="absolute top-0 left-0 bg-gray-50 z-[1000] w-full lg:hidden">
+    <section className="absolute top-0 left-0 bg-gray-50 z-[1000] w-full h-screen lg:hidden">
       <button
         type="button"
         className="absolute top-[10px] right-[10px] text-stone-800 active:text-primary"
@@ -29,7 +29,7 @@ export const MobileNavMenu: FC<Props> = ({ isMenuActive, links, setMenuActive })
         <TimesIcon width={40} height={40} />
       </button>
 
-      <nav className={`${sairaCondensed.className} flex flex-col items-center justify-center gap-y-2 py-10 uppercase font-semibold text-stone-800 text-2xl`}>
+      <nav className={`${sairaCondensed.className} flex flex-col items-center justify-center gap-y-4 py-10 uppercase font-semibold text-stone-800 text-3xl h-full`}>
         {links.map((link) => {
           let styles: string;
           switch (link.type) {
