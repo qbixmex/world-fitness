@@ -5,6 +5,16 @@ import { DumbbellIcon, HamburgerMenuIcon } from "@/app/components/icons";
 import { sairaCondensed } from "@/app/fonts";
 import Image from "next/image";
 import { MobileNavMenu } from "./mobile-nav-menu.component";
+import { NavLink } from "@/modules/interfaces";
+import { DesktopNavMenu } from "./desktop-nav-menu.component";
+
+const links: NavLink[] = [
+  { label: "Home", url: "#", type: "link" },
+  { label: "About", url: "#", type: "link" },
+  { label: "Locations", url: "#", type: "link" },
+  { label: "Contact", url: "#", type: "link" },
+  { label: "Sign Up", url: "#", type: "button" },
+];
 
 export const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -32,13 +42,9 @@ export const Navbar = () => {
             WorldFitness
           </span>
         </section>
-        <nav className={`${sairaCondensed.className} hidden md:flex items-center gap-x-4 uppercase font-bold text-white md:text-xl lg:text-2xl`}>
-          <a className="hover:text-primary-light transition-colors" href="#">Home</a>
-          <a className="hover:text-primary-light transition-colors" href="#">About</a>
-          <a className="hover:text-primary-light transition-colors" href="#">Locations</a>
-          <a className="hover:text-primary-light transition-colors" href="#">Contact</a>
-          <a className="bg-primary hover:bg-primary-dark hover:text-gray-200 transition-colors px-5 py-2 rounded-xl ml-2" href="#">Sign Up</a>
-        </nav>
+
+        <DesktopNavMenu links={links} />
+
         <button
           type="button"
           className="block md:hidden"
@@ -66,6 +72,7 @@ export const Navbar = () => {
       <MobileNavMenu
         isMenuActive={menuActive}
         setMenuActive={setMenuActive}
+        links={links}
       />
 
     </header>
