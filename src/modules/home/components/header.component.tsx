@@ -16,7 +16,7 @@ const links: NavLink[] = [
   { label: "Sign Up", url: "#", type: "button" },
 ];
 
-export const Navbar = () => {
+export const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
