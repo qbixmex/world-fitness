@@ -1,0 +1,23 @@
+.articleStyles {
+  @apply lg:flex lg:gap-x-10;
+} 
+
+.figureStyles {
+  @apply lg:w-1/2;
+} 
+
+.imageStyles {
+  @apply w-full max-w-[1280px] h-auto mb-10 lg:mb-0 rounded-lg object-cover object-top lg:h-[400px] lg:object-none;
+} 
+
+.contentStyles {
+  @apply lg:w-1/2;
+} 
+
+.titleStyles {
+  @apply uppercase border-l-[20px] border-primary pl-5 text-5xl font-bold text-stone-800 mb-5 last:mb-0;
+} 
+
+.textStyles {
+  @apply text-stone-600 text-xl lg:text-lg mb-4;
+}
