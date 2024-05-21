@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { TimesIcon } from "@/app/components/icons";
+import { TimesIcon } from "@/modules/common/icons";
 import { sairaCondensed } from "@/app/fonts";
 import { NavLink } from "@/modules/interfaces";
 import Link from "next/link";

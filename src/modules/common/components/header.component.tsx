@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { DumbbellIcon, HamburgerMenuIcon } from "@/app/components/icons";
+import { DumbbellIcon, HamburgerMenuIcon } from "@/modules/common/icons";
 import { sairaCondensed } from "@/app/fonts";
 import Image from "next/image";
-import { MobileNavMenu } from "./mobile-nav-menu.component";
+import { MobileNavMenu, DesktopNavMenu } from ".";
 import { NavLink } from "@/modules/interfaces";
-import { DesktopNavMenu } from "./desktop-nav-menu.component";
 
 const links: NavLink[] = [
   { label: "Home", url: "#", type: "link" },

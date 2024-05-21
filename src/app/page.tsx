@@ -1,4 +1,5 @@
-import { Header, Features, Content } from "@/modules/home/components";
+import { Header, Footer } from "@/modules/common/components";
+import { Features, Content } from "@/modules/home/components";
 
 const HomePage = () => {
   return (
@@ -6,6 +7,7 @@ const HomePage = () => {
       <Header />
       <Features />
       <Content />
+      <Footer />
     </>
   );
 };
