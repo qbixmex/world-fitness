@@ -1,4 +1,4 @@
-import { BarbellIcon, KettleBellIcon, RunningIcon } from "@/app/components/icons";
+import { BarbellIcon, KettleBellIcon, RunningIcon } from "@/modules/common/icons";
 import { sairaCondensed } from "@/app/fonts";
 
 const features = [

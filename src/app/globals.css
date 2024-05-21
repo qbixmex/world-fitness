@@ -10,3 +10,9 @@
     --color-base-dark: hsl(5, 75%, 40%);
   }
 }
+
+@layer utilities {
+  .container {
+    @apply w-[95%] md:w-[90%] lg:w-[80%] mx-auto;
+  }
+}
