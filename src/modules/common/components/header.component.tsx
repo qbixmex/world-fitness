@@ -19,7 +19,7 @@ export const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <header className="bg-black pt-5 h-[400px] md:h-[500px] lg:h-[600px] relative box-border px-[20px] lg:px-0">
+    <header className="bg-black pt-5 h-[400px] md:h-[500px] lg:h-[600px] relative box-border lg:px-0">
       <Image
         className="absolute top-0 right-0 z-0 w-[100%] h-[400px] lg:w-[960px] md:h-[500px] lg:h-[600px] object-cover object-top-center md:object-right-top"
         src="/images/making-dumbbell.jpg" alt="Dumbbell Fitness"
@@ -57,7 +57,7 @@ export const Header = () => {
         </button>
       </section>
 
-      <div className="w-[95%] md:w-[90%] lg:w-[80%] mx-auto relative z-20 text-white h-[310px] lg:h-[510px] flex justify-center lg:justify-start items-end lg:items-center">
+      <div className="container relative z-30 text-white h-[310px] lg:h-[510px] flex justify-center lg:justify-start items-end lg:items-center">
         <p className={`${sairaCondensed} uppercase text-4xl lg:text-6xl font-extrabold pb-10 lg:pb-0`}>
           Make your<br />
           workout <span className="text-primary">efficient</span>

@@ -2,7 +2,7 @@ import { openSans, sairaCondensed } from "@/app/fonts";
 import Image from "next/image";
 import styles from "./article.module.css";
 
-const mainStyles = "block py-10 w-[90%] mx-auto gap-y-10 md:gap-y-20 md:mt-10 md:flex md:flex-col";
+const mainStyles = "container block py-10 gap-y-10 md:gap-y-20 md:mt-10 md:flex md:flex-col";
 const titleStyles = `${sairaCondensed.className} ${styles.titleStyles}`;
 const textStyles = `${openSans.className} ${styles.textStyles}`;
 
