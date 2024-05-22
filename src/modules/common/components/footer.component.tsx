@@ -6,9 +6,9 @@ export const Footer = () => {
   return (
     <footer className="bg-black py-10">
       <section className="container text-white grid md:grid-cols-2 h-full">
-        <section className="col-span-1 md:flex md:flex-col md:justify-between">
+        <section className="col-span-1 md:flex md:flex-col md:justify-between md:items-start">
           {/* Title */}
-          <section className={`${sairaCondensed.className} text-6xl font-black text-center uppercase mb-5`}>
+          <section className={`${sairaCondensed.className} text-6xl font-black text-center md:text-left uppercase mb-5`}>
             <p>Ready for YOUR<br />free <span className="text-primary">Lesson</span> ?</p>
           </section>
           {/* Email */}
