@@ -10,18 +10,14 @@
 
 ## Mobile Version
 
-<table>
-  <tbody>
-    <tr>
-      <td style="vertical-align:top;">
-        <img style="max-width: 468px; width: 100%" src="./public/images/world-fitness-mobile.png" alt="Website Mobile Screenshot" />
-      </td>
-      <td style="vertical-align:top;">
-        <img style="max-width: 468px; width: 100%" src="./public/images/world-fitness-mobile-version-menu.png" alt="Website Mobile Menu Screenshot" />
-      </td>
-    </tr>
-  </tbody>
-</table>
+<section style="display:flex;justify-content:flex-start;align-items:flex-start;gap:20px;">
+  <div>
+    <img style="width:100%;max-width:468px;" src="./public/images/world-fitness-mobile.png" alt="Website Mobile Screenshot" />
+  </div>
+  <div>
+    <img style="width:100%;max-width:468px;" src="./public/images/world-fitness-mobile-version-menu.png" alt="Website Mobile Menu Screenshot" />
+  </div>
+</section>
 
 
 
